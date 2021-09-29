@@ -138,6 +138,7 @@
           <form class="form" action="send.php" method="post">
             <h3 >Оберіть послугу</h3>
           <select class="form__select" name="service" id="form__select" required>
+            <option value=></option>
             <option value="Технічна інвентаризація">Технічна інвентаризація</option>
             <option value="Реєстрація права власності">Реєстрація права власності</option>
             <option value="Виготовлення кадастрового номера на земельну ділянку">Виготовлення кадастрового номера на земельну ділянку</option>
@@ -149,7 +150,7 @@
             <option value="Нотаріальні послуги">Нотаріальні послуги</option>
           </select>
           <input class="input" type="text" aria-label="name" placeholder="Введіть своє їм'я" required> <br>
-          <input class="input" type="tel" data-phonemask-mask="+380" data-phonemask-mask="+380(99) 999-99-99" maxlength="13" placeholder="+380 (__) ___-__-__" required>
+          <input class="input" type="tel"  data-phonemask-mask="+380(99) 999-99-99" maxlength="13" placeholder="+380 (__) ___-__-__" required>
           <input class="form__submit" type="submit" value="Відправити">
           </form>
         </div>
