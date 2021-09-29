@@ -157,18 +157,12 @@ h6 {
 .company {
   max-width: 1020px;
   margin: 0 auto;
-  /* border: 1px solid #000; */
 }
 .about__us {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-/* .our__company {
-  display: flex;
-  flex-direction: column
-} */
-
 .H2 {
   padding: 40px 0 40px 0;
   font-weight: bold;
@@ -182,7 +176,6 @@ h6 {
   flex: 0 1 30%;
 }
 .our__company__item {
-  /* border: 1px solid #000; */
   height: 50%;
   color: rgb(100, 99, 99);
   padding: 50px 33px 20px 40px;
