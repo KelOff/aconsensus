@@ -79,7 +79,7 @@ h6 {
 .header__menu {
   position: fixed;
   top: 30px;
-  right: 30px;
+  right: 0px;
   opacity: 0.5;
 }
 .header__menu ul {
@@ -154,7 +154,7 @@ h6 {
 }
 .main__img {
   width: 100%;
-  background-image: url(../images/main__img.jpg);
+  background-image: url(https://keloff.github.io/images/main__img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -285,7 +285,7 @@ h6 {
   margin: 0 -10px;
 }
 .servises__img {
-  background-image: url(/images/123.jpg);
+  background-image: url(https://keloff.github.io/images/123.jpg);
   background-size: cover;
 }
 .servises__block {
