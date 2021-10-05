@@ -76,36 +76,21 @@ h6 {
 }
 /* --------------------*/
 
-.header__row {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #fff;
-  opacity: 0.7;
-}
-.header__content {
-  max-width: 1020px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 10px 20px;
-}
-.header__logo img {
-  flex: 0 0 130px;
-  width: 130px;
-}
 .header__menu {
-  align-self: flex-end;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  opacity: 0.5;
 }
 .header__menu ul {
   list-style: none;
   display: flex;
+  flex-direction: column;
   z-index: 10;
+  padding-top: 30px;
 }
 .header__menu__item {
   font-size: 1.5em;
-  margin: 0 10px;
   border: 1px solid #aaa;
   padding: 5px 25px;
   border-radius: 5px;
@@ -115,12 +100,63 @@ h6 {
 .header__menu__item a {
   color: #fff;
 }
+.header__menu__list li {
+  margin: 10px 0;
+}
+.header__menu__list {
+  visibility: visible;
+}
+#menu__toggle {
+  opacity: 0;
+}
+.menu__btn {
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 3 0px;
+  right: 40px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ ul {
+  visibility: visible;
+}
 .main__img {
-  height: 80%;
   width: 100%;
   background-image: url(../images/main__img.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   align-items: center;
   text-align: center;
@@ -365,4 +401,87 @@ h6 {
   color: rgb(100, 99, 99);
   font-size: 1.1em;
   padding: 10px 0 0 0;
+}
+.map__small {
+  display: none;
+}
+
+@media (max-width: 830px) {
+  .contacts {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .call {
+    padding-top: 20px;
+  }
+  .header__menu {
+    opacity: 1;
+  }
+  .header__menu__list {
+    visibility: hidden;
+  }
+  .menu__btn {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 770px) {
+  .map__large {
+    display: none;
+  }
+  .map__small {
+    display: block;
+  }
+}
+
+@media (max-width: 670px) {
+  .our__company__image {
+    display: none;
+  }
+}
+@media (max-width: 670px) {
+  .our__company__image {
+    display: none;
+  }
+  .advantages__head h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  .advantages__head p {
+    font-size: 1em;
+  }
+  .advantages__items {
+    font-size: 1.2em;
+  }
+  .advantages__row {
+    height: 350px;
+    padding: 50px 0 0 0;
+  }
+  .advantages {
+    color: #fff;
+    font-family: "Gill Sans", sans-serif;
+  }
+  .our__company__item {
+    text-align: center;
+  }
+}
+@media (max-width: 555px) {
+  .main__img__txt h1 {
+    font-size: 2.5em;
+  }
+  .main__img__txt p,
+  .main__img__txt a {
+    font-size: 1em;
+  }
+  .servises__item {
+    height: auto;
+  }
+}
+@media (max-width: 800px) {
+  .header__menu__list {
+    visibility: hidden;
+  }
+  .menu__btn {
+    visibility: visible;
+  }
 }
