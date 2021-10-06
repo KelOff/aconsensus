@@ -6,6 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
   <title>A.consensus</title>
+            <script>
+
+              function complitedForm(f) {
+                let form = document.querySelector(".form");
+                let message = document.querySelector(".form-success-message");
+
+                form.style.display = "none"
+                message.style.display =" flex"
+
+                console.log(form + message)
+
+              }
+            </script>
 </head>
 <body>
   <nav id="menu" class="header__menu">
@@ -130,63 +143,66 @@
       </div>
       <div class="contacts__component">
         <div class="form">
-          
-
-
-        <form
+        <form class="contacts__form"
+          onSubmit="complitedForm()"
+          target="blank-iframe" 
           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScWtyD8D_X_GpHoT_nU_towtlMmmGwR-MTfMGLsr_0ZTYOAVw/formResponse"
-          target="_self" method="POST" id="mG61Hd" jsmodel="TOfxwf Q91hve" data-shuffle-seed="-4594583486204755686"
+          method="POST" id="mG61Hd" jsmodel="TOfxwf Q91hve" data-shuffle-seed="-4594583486204755686"
           data-response="%.@.[]]" data-first-entry="0" data-last-entry="3" data-is-first-page="true">
           <h3>Оберіть послугу</h3>
           <select class="form__select" name="entry.1410829700" id="form__select" required>
-            <option name="wQNmvb" value=></option>
-            <option name="wQNmvb" value="Технічна інвентаризація">Технічна інвентаризація</option>
-            <option name="wQNmvb" value="Реєстрація права власності">Реєстрація права власності</option>
-            <option name="wQNmvb" value="Виготовлення кадастрового номера на земельну ділянку">Виготовлення кадастрового номера
+            <option value=></option>
+            <option value="Технічна інвентаризація">Технічна інвентаризація</option>
+            <option value="Реєстрація права власності">Реєстрація права власності</option>
+            <option value="Виготовлення кадастрового номера на земельну ділянку">Виготовлення кадастрового номера
               на земельну
               ділянку</option>
-            <option name="wQNmvb" value="Витяг з ДЗК">Витяг з ДЗК</option>
-            <option name="wQNmvb" value="Довідка БТІ">Довідка БТІ</option>
-            <option name="wQNmvb" value="Легалізація будівництва">Легалізація будівництва</option>
-            <option name="wQNmvb" value="Оцінка майна">Оцінка майна</option>
-            <option name="wQNmvb" value="Реєстрація права власності на гараж">Реєстрація права власності на гараж</option>
-            <option name="wQNmvb" value="Нотаріальні послуги">Нотаріальні послуги</option>
+            <option value="Витяг з ДЗК">Витяг з ДЗК</option>
+            <option value="Довідка БТІ">Довідка БТІ</option>
+            <option value="Легалізація будівництва">Легалізація будівництва</option>
+            <option value="Оцінка майна">Оцінка майна</option>
+            <option value="Реєстрація права власності на гараж">Реєстрація права власності на гараж</option>
+            <option value="Нотаріальні послуги">Нотаріальні послуги</option>
           </select>
-          <input class="input" type="text" aria-label="name" placeholder="Введіть своє їм'я" required name="entry.693184215"
-            autocomplete="off" tabindex="0" aria-labelledby="i5" aria-describedby="i6 i7" dir="auto" data-initial-dir="auto"
-            data-initial-value=""> <br>
+          <input class="input" type="text" aria-label="name" placeholder="Введіть своє їм'я" required name="entry.693184215"> <br>
           <input class="input" type="tel" data-phonemask-mask="+380(99) 999-99-99" axlength="13"
-            placeholder="+380 (__) ___-__-__" required name="entry.643296573" autocomplete="off" tabindex="0"
-            aria-labelledby="i9" aria-describedby="i10 i11" dir="auto" data-initial-dir="auto" data-initial-value="">
+            placeholder="+380 (__) ___-__-__" required name="entry.643296573">
           <button class="form__submit" type="submit" value="Відправити"> Відправити </button>
         </form>
-        </div>
-        <div class="call">
-          <h4>Або зателефонуйте:</h4>
-          <p class="call__us">м. Ужгород <br>
+      </div>
+      <div class="form-success-message ">
+        <h1>Ми прийняли вашу заявку і звяжемось з Вами найближчим часом! </h1>
+      </div>
+      <div class="call">
+        <h4>Або зателефонуйте:</h4>
+        <p class="call__us">м. Ужгород <br>
           №тел <a href="tel:+380978550641">+38 097 8550641</a> та <a href="tel:+380954906240">+38 095 490 62 40</a></p>
           <hr>
           <p class="call__us">м. Івано-Франківськ <br>
-          №тел <a href="tel:+380680578578">+38 068 0578 578</a></p>
+            №тел <a href="tel:+380680578578">+38 068 0578 578</a></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer">
-    <div class="footer__component">
-      <div class="element">
-        <ul>
-          <li>м. Ужгород вул. Загорська 55, поверх 3 офіс №2</li>
-          <li>№тел <a href="tel:+380978550641">+38 097 8550641</a> та <a href="tel:+380954906240">+38 095 490 62 40</a> </li>
-        </ul>
-      </div>
-      <div class="element">
-        <ul>
-          <li>м. Івано-Франківськ</li>
-          <li>№тел <a href="tel:+380680578578">+38 068 0578 578</a> </li>
-        </ul>
+
+    <div class="footer">
+      <div class="footer__component">
+        <div class="element">
+          <ul>
+            <li>м. Ужгород вул. Загорська 55, поверх 3 офіс №2</li>
+            <li>№тел <a href="tel:+380978550641">+38 097 8550641</a> та <a href="tel:+380954906240">+38 095 490 62 40</a> </li>
+          </ul>
+        </div>
+        <div class="element">
+          <ul>
+            <li>м. Івано-Франківськ</li>
+            <li>№тел <a href="tel:+380680578578">+38 068 0578 578</a> </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
+
+        <iframe name="blank-iframe" id="blank-iframe" src="about:blank" title="fetch"
+          style="position: fixed;opacity: 0;top: -1000px;left: -99999px;">
   </body>
 </html>

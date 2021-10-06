@@ -425,6 +425,18 @@ h6 {
   }
 }
 
+.form-success-message {
+  display: none;
+}
+.form-success-message h1 {
+  font-size: 2em;
+  line-height: 1.5em;
+  text-align: center;
+  color: rgb(85, 85, 85);
+  border: 2px solid rgb(85, 85, 85);
+  border-radius: 5px;
+}
+
 @media (max-width: 770px) {
   .map__large {
     display: none;
